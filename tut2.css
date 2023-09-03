@@ -72,6 +72,9 @@ h5{
     display: none;
 
 }
+.show{
+    display: block;
+}
 .messagecontent{
     color: #4B830a;
 }

@@ -1,5 +1,5 @@
 (function (){
- const form=document.querySelector('#message-form')
+ const form=document.querySelector("#message-form")
  form.addEventListener('submit',function(e) {
     e.preventDefault()
 
@@ -8,13 +8,17 @@
     const messagecontent=document.querySelector('.messagecontent')
 
     if( message.value === ''){
-
+         feedback.classList.add('show')
+         setTimeout(function(){
+            feedback.classList.remove('show')
+         },4000)
     }
     else {
-        
+        messagecontent.textContent=message.value;
+        message.value='';
     }
  })
 
 
 
-})
+})()
